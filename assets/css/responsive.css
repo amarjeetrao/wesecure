@@ -1,0 +1,7 @@
+/*************** Navigation *****************/
+
+@media (min-width: 768px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding: 1.6rem 2rem;
+	}
+}
