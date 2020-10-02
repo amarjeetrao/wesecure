@@ -1,7 +1,77 @@
 /*************** Navigation *****************/
 
 @media (min-width: 768px) {
-	.navbar-expand-md .navbar-nav .nav-link {
+	.navbar-expand-lg .navbar-nav .nav-link {
 		padding: 1.6rem 2rem;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		padding: 1.5rem 2.5rem !important
+	}
+	.hero-banner [class*="col-"] {
+		text-align: left !important;
+	}
+
+	.hero-banner svg {
+		width: 15rem;
+		margin-bottom: 5rem;
+	}
+
+	.hero-banner h1 {
+		font-size: 3.2rem;
+	}
+
+	.hero-banner .btn {
+		margin-bottom: 6rem;
+	}
+
+	.awards .awards-logos img {
+		width: 6rem;
+		height: auto;
+		margin-bottom: 3rem;
+	}
+
+	 h2 {
+		font-size: 3.6rem !important;
+	}
+
+	.team h2.font-weight-normal {
+		font-size: 4rem !important;
+	}
+
+	.mission .white-box {
+		padding: 2rem;
+	}
+
+	.mission .icon {
+		margin-bottom: 2rem;
+	}
+
+	.mission .icon svg{
+		height: 5rem;
+	}
+
+	.testimonial .swiper-slide blockquote {
+		font-size: 1.6rem;
+		line-height: 2;
+	}
+
+	.swiper-pagination {
+		text-align: center;
+		bottom: 6rem;
+		left: 50%;
+    	transform: translateX(-50%);
+	}
+
+	.footer-bottom .text-right {
+		text-align: left !important;
+	}
+
+	.container {
+		padding-right: 2.5rem;
+   		padding-left: 2.5rem;
 	}
 }

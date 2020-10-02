@@ -5,11 +5,12 @@
 	--brand-white: #fff;
 	--brand-primary: #0f62fe;
 	--brand-primary-light: #bae6ff;
-	--brand-secondary: #F7F3F2;
+	--brand-secondary: #f7f3f2;
 	--brand-secondary-light: #fcf4d6;
 	--brand-mute: #666666;
-	--brand-light: #EEEEEE;
-	--brand-dark: #202020;
+	--brand-light: #eeeeee;
+	--brand-darker: #202020;
+	--brand-dark: #393939;
 }
 
 body {
@@ -18,17 +19,20 @@ body {
 	background-color: var(--brand-white);
 }
 
-h1, .h1 {
+h1,
+.h1 {
 	font-size: 6rem;
 	font-weight: 400;
 	margin-bottom: 2rem;
 }
 
-h1 strong, .h1 strong {
-	font-weight: 700
+h1 strong,
+.h1 strong {
+	font-weight: 700;
 }
 
-h2, .h2 {
+h2,
+.h2 {
 	font-size: 5rem;
 	font-weight: 400;
 }
@@ -38,30 +42,31 @@ h2, .h2 {
 	font-weight: 400;
 }
 
-
-h4, .h4 {
+h4,
+.h4 {
 	font-size: 2.4rem;
-    font-weight: 400;
+	font-weight: 400;
 }
 
-h5, .h5 {
+h5,
+.h5 {
 	font-size: 1.6rem;
-    font-weight: 500;
+	font-weight: 500;
 }
 
 p {
 	margin-bottom: 2rem;
-	line-height: 2
+	line-height: 2;
 }
 
 .muted-heading {
 	font-size: 1.4rem !important;
-    color: var(--brand-mute);
+	color: var(--brand-mute);
 	text-transform: uppercase;
 	line-height: 2;
 	font-weight: 500;
 	margin-bottom: 0;
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 /*************** General style *****************/
@@ -83,15 +88,20 @@ p {
 
 .btn {
 	font-size: 1.4rem;
-    padding: 2rem;
+	padding: 2rem;
 	border-radius: 0;
+}
+
+.btn-sm {
+	padding: 0 10px !important;
+	line-height: 2;
 }
 
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle,
 .btn-primary.focus,
 .btn-primary:focus {
 	background-color: var(--brand-primary);
@@ -102,13 +112,21 @@ p {
 	background-color: #eaeaea;
 }
 
+.bg-darker {
+	background-color: var(--brand-darker)
+}
+
+a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
+	background-color: var(--brand-primary) !important
+}
+
 /*************** Navigation *****************/
 .page-header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-    z-index: 9999;
+	z-index: 9999;
 }
 
 .navbar-dark {
@@ -127,6 +145,107 @@ p {
 	color: var(--brand-white);
 }
 
+.hover-dropdown {
+	height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+	right: 0;
+	background-color: var(--brand-darker);
+	transition: height 0.2s ease;
+}
+
+.menu-hover:hover .hover-dropdown.product {
+	height: 277px;
+}
+
+.menu-hover:hover .hover-dropdown.solutions {
+	height: 366px;
+}
+
+.hover-dropdown a {
+	text-decoration: none;
+}
+
+
+.highlight.bg-darker {
+	background-color: var(--brand-darker)
+}
+
+.highlight {
+	padding: 3rem 4rem;
+	background-color: var(--brand-dark)
+}
+
+.highlight .highlight-bottom {
+    padding-top: 6.5rem;
+}
+
+.highlight .muted-heading {
+	font-size: 1.2rem !important;
+}
+
+.highlight h4 {
+	font-size: 2rem;
+	color: var(--brand-white)
+}
+
+.highlight h5,
+.highlight p {
+	color: var(--brand-white)
+}
+
+.highlight a.btn {
+	border: 1px solid var(--brand-mute);
+	color: rgba(255, 255, 255, .50)
+}
+
+.highlight a.btn:hover {
+	border: 1px solid var(--brand-primary);
+	color: var(--brand-white)
+}
+
+.pages {
+	height: 100%;
+}
+
+.pages .muted-heading {
+	border-bottom: 1px solid #3c3c3c;
+}
+
+.pages .muted-heading::after {
+	content: '';
+}
+
+.pages .page-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: var(--brand-white);
+	padding: 3.6rem 2rem;
+	height: 100%;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+}
+
+.pages .page-link .highlight {
+	padding: 0 2rem;
+}
+
+.pages .page-link .highlight svg{
+	margin-bottom: 8rem;
+}
+
+.pages .page-link:hover,
+.pages .page-link:hover .highlight {
+	background-color: var(--brand-primary);
+}
+
+.slided {
+	display: block !important;
+}
+
 /*************** hero banner *****************/
 .hero-banner {
 	padding-top: 12rem;
@@ -137,24 +256,28 @@ p {
 	line-height: 3rem;
 }
 
+/*************** mission cards *****************/
+
+
+
 /*************** mission section *****************/
 .white-box {
 	background-color: var(--brand-white);
-    padding: 6rem;
+	padding: 6rem;
 }
 
 /*************** Team section *****************/
-.card-list [class*="col-"]{
+.card-list [class*='col-'] {
 	margin-bottom: 2rem;
 	padding: 0 0.8rem;
 }
 
-.card-list [class*="col-"]:first-child{
-    padding-left: 15px;
+.card-list [class*='col-']:first-child {
+	padding-left: 15px;
 }
 
-.card-list [class*="col-"]:last-child{
-    padding-right: 15px;
+.card-list [class*='col-']:last-child {
+	padding-right: 15px;
 }
 
 .card {
@@ -184,7 +307,7 @@ p {
 }
 
 .card-social ul.social {
-	padding-left: 0
+	padding-left: 0;
 }
 
 .card-social ul.social .item {
@@ -203,15 +326,15 @@ p {
 }
 
 .testimonial .swiper-slide:first-child {
-	background-color: var(--brand-primary-light)
+	background-color: var(--brand-primary-light);
 }
 
 .testimonial .swiper-slide:nth-child(2) {
-	background-color: var(--brand-secondary)
+	background-color: var(--brand-secondary);
 }
 
 .testimonial .swiper-slide:nth-child(3) {
-	background-color: var(--brand-secondary-light)
+	background-color: var(--brand-secondary-light);
 }
 
 .testimonial .swiper-slide img {
@@ -220,7 +343,7 @@ p {
 
 .testimonial .swiper-slide blockquote {
 	font-size: 2.8rem;
-    line-height: 1.4;
+	line-height: 1.4;
 }
 
 .profile .avatar {
@@ -247,7 +370,7 @@ p {
 	bottom: 12rem;
 	opacity: 0.5;
 	border-radius: 0.3rem;
-	background: var(--brand-white)
+	background: var(--brand-white);
 }
 
 .swiper-pagination-bullet-active {
@@ -258,7 +381,6 @@ p {
 /*************** footer section *****************/
 footer {
 	padding: 8rem 0 4rem;
-
 }
 
 footer h5 {
