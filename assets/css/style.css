@@ -1,3 +1,4 @@
+
 /*************** Typography *****************/
 :root {
 	font-size: 62.5%;
@@ -113,14 +114,23 @@ p {
 }
 
 .bg-darker {
-	background-color: var(--brand-darker)
+	background-color: var(--brand-darker);
 }
 
-a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
-	background-color: var(--brand-primary) !important
+a.bg-dark:focus,
+a.bg-dark:hover,
+button.bg-dark:focus,
+button.bg-dark:hover {
+	background-color: var(--brand-primary) !important;
 }
 
 /*************** Navigation *****************/
+.navbar-collapse {
+	-webkit-transition: height 0.2s ease;
+	-o-transition: height 0.2s ease;
+	transition: height 0.2s ease;
+}
+
 .page-header {
 	position: fixed;
 	top: 0;
@@ -147,11 +157,13 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 
 .hover-dropdown {
 	height: 0;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
 	right: 0;
 	background-color: var(--brand-darker);
+	-webkit-transition: height 0.2s ease;
+	-o-transition: height 0.2s ease;
 	transition: height 0.2s ease;
 }
 
@@ -167,18 +179,17 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 	text-decoration: none;
 }
 
-
 .highlight.bg-darker {
-	background-color: var(--brand-darker)
+	background-color: var(--brand-darker);
 }
 
 .highlight {
 	padding: 3rem 4rem;
-	background-color: var(--brand-dark)
+	background-color: var(--brand-dark);
 }
 
 .highlight .highlight-bottom {
-    padding-top: 6.5rem;
+	padding-top: 6.5rem;
 }
 
 .highlight .muted-heading {
@@ -187,22 +198,22 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 
 .highlight h4 {
 	font-size: 2rem;
-	color: var(--brand-white)
+	color: var(--brand-white);
 }
 
 .highlight h5,
 .highlight p {
-	color: var(--brand-white)
+	color: var(--brand-white);
 }
 
 .highlight a.btn {
 	border: 1px solid var(--brand-mute);
-	color: rgba(255, 255, 255, .50)
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .highlight a.btn:hover {
 	border: 1px solid var(--brand-primary);
-	color: var(--brand-white)
+	color: var(--brand-white);
 }
 
 .pages {
@@ -218,8 +229,15 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .pages .page-link {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	color: var(--brand-white);
 	padding: 3.6rem 2rem;
@@ -233,7 +251,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 	padding: 0 2rem;
 }
 
-.pages .page-link .highlight svg{
+.pages .page-link .highlight svg {
 	margin-bottom: 8rem;
 }
 
@@ -242,8 +260,44 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 	background-color: var(--brand-primary);
 }
 
-.slided {
-	display: block !important;
+.mobile .navbar-nav {
+	margin-left: -2.5rem;
+	margin-right: -2.5rem !important;
+}
+
+.mobile .nav-link {
+	padding: 1.9rem 2.5rem;
+}
+
+.mobile .nav-link.dropdown-toggle {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.mobile .nav-link.dropdown-toggle:hover,
+.mobile .nav-link.dropdown-toggle:active {
+	background: var(--brand-primary);
+}
+
+.navbar-nav .dropdown-menu {
+	font-size: 1.4rem;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+}
+
+.navbar-nav .dropdown-item {
+	margin: 0;
+	padding: 1.9rem 2.5rem;
+	color: var(--brand-white);
+	background-color: var(--brand-dark);
 }
 
 /*************** hero banner *****************/
@@ -258,7 +312,17 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 
 /*************** mission cards *****************/
 
+.container-snap {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 13rem;
+}
 
+.scroll-snap-cards section {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 13rem;
+}
 
 /*************** mission section *****************/
 .white-box {
@@ -288,6 +352,8 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .card-img-top-bg {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	background-color: var(--brand-secondary);
 }
@@ -295,6 +361,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 .card-img-top {
 	width: 16rem;
 	margin: 3.5rem auto;
+	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
 }
 

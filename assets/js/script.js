@@ -12,13 +12,4 @@
 		}
 	});
 
-	//navigation mobile menu
-	let menuToggle = document.querySelector('.navbar-toggler');
-
-	menuToggle.addEventListener('click', function () {
-		mobileTarget = this.dataset.target;
-
-		let mobileMenu = document.querySelector(mobileTarget);
-		mobileMenu.classList.toggle('slided');
-	});
 })();
