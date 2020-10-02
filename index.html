@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>We Secure App</title>
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/responsive.css">
@@ -13,41 +14,45 @@
 <body>
 	<div class="wrapper">
 		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-dark py-0 pl-4 pr-0">
-				<a class="navbar-brand" href="#"><img src="./assets/images/WSA_Logo_White.png" alt="brand logo" width="150px" /></a>
-				<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu"
-					aria-expanded="false" aria-label="Toggle mobile navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="mobile-menu">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Product</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Solutions</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Resources</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Careers</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-						</li>
-					</ul>
-					<ul class="navbar-nav ml-auto d-flex align-items-center">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link btn btn-primary" href="#">Schedule a demo</a>
-						</li>
-					</ul>
+			<header class="page-header">
+				<div class="container">
+					<nav class="navbar navbar-expand-md navbar-dark py-0 pl-4 pr-0">
+						<a class="navbar-brand" href="#"><img src="./assets/images/WSA_Logo_White.png" alt="brand logo" width="150px" /></a>
+						<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu"
+							aria-expanded="false" aria-label="Toggle mobile navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="mobile-menu">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Product</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Solutions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Resources</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Careers</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+								</li>
+							</ul>
+							<ul class="navbar-nav ml-auto d-flex align-items-center">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Contact</a>
+								</li>
+								<li class="nav-item ml-4">
+									<a class="nav-link btn btn-primary" href="#">Schedule a demo</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 				</div>
-			</nav>
-			<section class="hero-banner pt-5 mt-5 pb-4">
+			</header>
+			<section class="hero-banner pb-4">
 				<div class="row">
 					<div class="col-md-6">
 						<h1>Hi, we’re <strong>WeSecureApp.</strong></h1>
@@ -101,8 +106,8 @@
 						<p class="muted-heading">OUR MISSION AND VISION</p>
 						<h2>We are set out on a mission to conquer <br> cyber security challenges.</h2>
 					</div>
-					<div class="row pb-5 mb-5">
-						<div class="col-md-6">
+					<div class="row pb-5">
+						<div class="col-md-6 pr-3">
 							<section class="white-box h-100">
 								<div class="icon">
 									<svg width="97px" x="0px" y="0px" viewBox="0 0 97 97" style="enable-background:new 0 0 97 97;" xml:space="preserve">
@@ -125,7 +130,7 @@
 								</p>
 							</section>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 pl-3">
 							<section class="white-box h-100">
 								<div class="icon">
 									<svg xmlns="http://www.w3.org/2000/svg" width="122" height="79.143" viewBox="0 0 122 79.143">
@@ -143,350 +148,610 @@
 			</div>
 		</div>
 		<div class="container">
-				<section class="mission py-5 my-5">
-					<div class="section-heading py-4">
-						<p class="muted-heading">MEET OUR TEAM</p>
-						<h2 class="h2-alt">The right mixture of leaders, hackers & influencers.</h2>
+			<section class="team py-5 my-5">
+				<div class="section-heading py-4 mb-5">
+					<p class="muted-heading">MEET OUR TEAM</p>
+					<h2 class="h2-alt">The right mixture of leaders, hackers & influencers.</h2>
+				</div>
+				<div class="row pb-5">
+					<div class="col-md-12">
+						<h2 class="h1 font-weight-normal">Management</h2>
 					</div>
-					<div class="row pb-5 mb-5">
-						<div class="col-md-12">
-							<h2 class="h1 font-weight-normal">Management</h2>
+				</div>
+				<div class="card-list pb-5 mb-5">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/VenuRao.png" alt="Venu Rao" width="160">
+								</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Venu Rao</h4>
+									<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
+															<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="card-list pb-5 mb-5">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/VenuRao.png" alt="Venu Rao" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Venu Rao</h4>
-										<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
-																<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
-															</svg>
-														</a>
-													</li>
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
-																<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/srini.png" alt="Srini Dhara" width="160">
+								</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Srini Dhara</h4>
+									<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
+															<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/srini.png" alt="Srini Dhara" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Srini Dhara</h4>
-										<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
-																<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
-															</svg>
-														</a>
-													</li>
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
-																<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/akhil.png" alt="Akhil Reni" width="160">
 								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/akhil.png" alt="Akhil Reni" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Akhil Reni</h4>
-										<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
-																<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
-															</svg>
-														</a>
-													</li>
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
-																<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/anurag.jpg" alt="Anurag Giri" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Anurag Giri</h4>
-										<h4 class="card-subtitle muted-heading">DIRECTOR OF SERVICES</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
-																<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
-															</svg>
-														</a>
-													</li>
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
-																<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/eshwar.jpg" alt="Eshwar Uppala" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Eshwar Uppala</h4>
-										<h4 class="card-subtitle muted-heading">DIRECTOR OF PRODUCT</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
-																<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
-															</svg>
-														</a>
-													</li>
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
-																<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Akhil Reni</h4>
+									<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
+															<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row pb-5">
-						<div class="col-md-12">
-							<h2 class="h1 font-weight-normal">Advisors</h2>
-						</div>
-					</div>
-					<div class="card-list pb-5 mb-5">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/swathik.jpeg" alt="Swastik Bihani" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Swastik Bihani</h4>
-										<h4 class="card-subtitle muted-heading">HEAD OF PRODUCT MANAGEMENT & GM, INDIA AT PAYPAL</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
-																<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/anurag.jpg" alt="Anurag Giri" width="160">
 								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/abhijeeth.png" alt="Abhijeth Dugginapeddi" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Abhijeth Dugginapeddi</h4>
-										<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
-																<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Anurag Giri</h4>
+									<h4 class="card-subtitle muted-heading">DIRECTOR OF SERVICES</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
+															<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row pb-5">
-						<div class="col-md-12">
-							<h2 class="h1 font-weight-normal">Investors</h2>
-						</div>
-					</div>
-					<div class="card-list pb-5 mb-5">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/swathik.jpeg" alt="Swastik Bihani" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Swastik Bihani</h4>
-										<h4 class="card-subtitle muted-heading">HEAD OF PRODUCT MANAGEMENT & GM, INDIA AT PAYPAL</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
-																<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/eshwar.jpg" alt="Eshwar Uppala" width="160">
 								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/abhijeeth.png" alt="Abhijeth Dugginapeddi" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Abhijeth Dugginapeddi</h4>
-										<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
-																<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Eshwar Uppala</h4>
+									<h4 class="card-subtitle muted-heading">DIRECTOR OF PRODUCT</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
+															<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row pb-5">
-						<div class="col-md-12">
-							<h2 class="h1 font-weight-normal">Advisors</h2>
-						</div>
+				</div>
+				<div class="row pb-5">
+					<div class="col-md-12">
+						<h2 class="h1 font-weight-normal">Advisors</h2>
 					</div>
-					<div class="card-list pb-5 mb-5">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/swathik.jpeg" alt="Swastik Bihani" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Swastik Bihani</h4>
-										<h4 class="card-subtitle muted-heading">HEAD OF PRODUCT MANAGEMENT & GM, INDIA AT PAYPAL</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
-																<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+				</div>
+				<div class="card-list pb-5 mb-5">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/swathik.jpeg" alt="Swastik Bihani" width="160">
 								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-img-top-bg">
-										<img class="card-img-top mx-auto" src="./assets/team/abhijeeth.png" alt="Abhijeth Dugginapeddi" width="160">
-									</div>
-									<div class="card-body">
-										<h4 class="card-title my-4">Abhijeth Dugginapeddi</h4>
-										<h4 class="card-subtitle muted-heading">CO-FOUNDER & CEO</h4>
-										<p class="card-text">
-											<div class="card-social">
-												<ul class="social">
-													<li class="item">
-														<a href="#" target="_blank" rel="noopener noreferrer">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
-																<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
-															</svg>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</p>
-									</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Swastik Bihani</h4>
+									<h4 class="card-subtitle muted-heading">HEAD OF PRODUCT MANAGEMENT & GM, INDIA AT PAYPAL</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
 								</div>
 							</div>
 						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/abhijeeth.png" alt="Abhijeth Dugginapeddi" width="160">
+								</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Abhijeth Dugginapeddi</h4>
+									<h4 class="card-subtitle muted-heading">MENTOR</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19.502" viewBox="0 0 24 19.502">
+															<path id="Path_83" data-name="Path 83" d="M12.549,26.565A13.92,13.92,0,0,0,26.556,12.558v-.644A10.255,10.255,0,0,0,29,9.372a10.156,10.156,0,0,1-2.825.775A4.975,4.975,0,0,0,28.356,7.42a9.7,9.7,0,0,1-3.12,1.2,4.931,4.931,0,0,0-8.4,4.484A13.953,13.953,0,0,1,6.691,7.965a4.92,4.92,0,0,0,1.527,6.545A4.876,4.876,0,0,1,6.036,13.9v.055a4.942,4.942,0,0,0,3.873,4.855,4.942,4.942,0,0,1-2.182.087,4.92,4.92,0,0,0,4.56,3.371,9.873,9.873,0,0,1-6.12,2.182A10.66,10.66,0,0,1,5,24.351a13.931,13.931,0,0,0,7.549,2.182" transform="translate(-5 -7.063)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
-				</section>
+				</div>
+				<div class="row pb-5">
+					<div class="col-md-12">
+						<h2 class="h1 font-weight-normal">Investors</h2>
+					</div>
+				</div>
+				<div class="card-list pb-5 mb-5">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/deep.jpg" alt="Deep Kalina" width="160">
+								</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Deep Kalina</h4>
+									<h4 class="card-subtitle muted-heading">CEO & FOUNDER AT INTUITIO LABS</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/manahor.jpg" alt="Manohar Jangetii" width="160">
+								</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Manohar Jangetii</h4>
+									<h4 class="card-subtitle muted-heading">CEO AT DYNAMIC SOFTWARE CONSULTANTS</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-5">
+					<div class="col-md-12">
+						<h2 class="h1 font-weight-normal">UK Team</h2>
+					</div>
+				</div>
+				<div class="card-list pb-5 mb-5">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/shravan_L.png" alt="Shravan L Reddy" width="160">
+								</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Shravan L Reddy</h4>
+									<h4 class="card-subtitle muted-heading">DIRECTOR - SALES</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-img-top-bg">
+									<img class="card-img-top mx-auto" src="./assets/team/santosh_e.png" alt="Santosh Erukulla" width="160">
+								</div>
+								<div class="card-body">
+									<h4 class="card-title mt-3">Santosh Erukulla</h4>
+									<h4 class="card-subtitle muted-heading">ADVISOR</h4>
+									<p class="card-text">
+										<div class="card-social">
+											<ul class="social">
+												<li class="item">
+													<a href="#" target="_blank" rel="noopener noreferrer">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+															<path id="Path_82" data-name="Path 82" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)"></path>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="testimonial">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<p class="muted-heading mt-0">ENTERPRISE</p>
+									<img src="./assets/testimonial/pic-1.png" width="200" alt="">
+									<p>
+										Nowcom is a dealer management software solutions dealer centre. With broad expertise in Auto, Insurance, Finance and Sales Industries, Nowcom provides real software solutions that innovate at every turn.
+									</p>
+								</div>
+								<div class="col-md-8">
+									<blockquote>
+										“We are extremely pleased with the results of Secure Source Code Auditing service from WeSecureApp (WSA). The expert team at WSA were able to identify a large list of vulnerabilities that were missed by our internal team reviews and multiple third-party PEN testers. The WSA team was proactive in ensuring that the fixes were applied correctly, including multiple code reviews as well as follow up tests. Without a review from the experts at WSA, I believe we would be operating our critical applications with a false sense of security.”
+									</blockquote>
+									<div class="profile pt-5">
+										<div class="row">
+											<div class="col-1">
+												<div class="avatar">
+													<img src="./assets/testimonial/avatar.png" width="50" alt="">
+												</div>
+											</div>
+											<div class="col">
+												<h5>Vimal Nair</h5>
+												<p>CTO, GroupMap Technology</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<p class="muted-heading mt-0">ENTERPRISE</p>
+									<img src="./assets/testimonial/legalinc-logo.png" width="200" alt="">
+									<p>
+										Legalinc Corporate Services, Inc.
+									</p>
+								</div>
+								<div class="col-md-8">
+									<blockquote>
+										“WSA solved our security problems through their solution CAINS. They helped us not only in finding potential vulnerabilities in our applications but also trained our developers to ensure the vulnerabilities are not repeated in future releases. Overall in one year, we have seen that our application security posture improved multi-fold.”
+									</blockquote>
+									<div class="profile pt-5">
+										<div class="row">
+											<div class="col-1">
+												<div class="avatar">
+													<img src="./assets/testimonial/ben (1).jpeg" width="50" alt="">
+												</div>
+											</div>
+											<div class="col">
+												<h5>Vimal Nair</h5>
+												<p>CTO, GroupMap Technology</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<p class="muted-heading mt-0">ENTERPRISE</p>
+									<img src="./assets/testimonial/asco-logo.png" width="200" alt="">
+									<p>
+										Ascot Barclay Cyber Security Group
+									</p>
+								</div>
+								<div class="col-md-8">
+									<blockquote>
+										“WeSecureApp team are highly professional dependable and a joy to work with. We have been strategic and trusted partners for a few years and I look forward to a continued business relationship as we progress and grow our respective businesses.”
+									</blockquote>
+									<div class="profile pt-5">
+										<div class="row">
+											<div class="col-1">
+												<div class="avatar">
+													<img src="./assets/testimonial/mike.png" width="50" alt="">
+												</div>
+											</div>
+											<div class="col">
+												<h5>Vimal Nair</h5>
+												<p>CTO, GroupMap Technology</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Testimonial Pagination -->
+				<div class="container position-relative">
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
+		</div>
+
+		<div class="bg-dark">
+			<div class="container">
+				<div class="get-started py-5">
+					<div class="row align-items-center">
+						<div class="col-md-9">
+							<h2 class="py-5 my-5">
+								We are committed to become your trusted cyber security partner.
+							</h2>
+						</div>
+						<div class="col-md-3">
+							<div class="py-5 my-5">
+								<a class="btn btn-primary btn-block">Get Started</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bg-black">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<h5>Quick Links</h5>
+						<ul>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Partners</a>
+							</li>
+							<li>
+								<a href="#">Careers</a>
+							</li>
+							<li>
+								<a href="#">Resources</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<h5>Services</h5>
+						<ul class="row">
+							<li class="col-md-6">
+								<h5>APPLICATION SECURITY</h5>
+								<ul>
+									<li>
+										<a href="#">Web Application VAPT</a>
+									</li>
+									<li>
+										<a href="#">Mobile Application VAPT</a>
+									</li>
+									<li>
+										<a href="#">Secure Code Review</a>
+									</li>
+								</ul>
+								<h5>CLOUD SECURITY</h5>
+								<ul>
+									<li>
+										<a href="#">Deployment Review</a>
+									</li>
+								</ul>
+							</li>
+							<li class="col-md-6">
+								<h5>NETWORK SECURITY</h5>
+								<ul>
+									<li>
+										<a href="#">Network VAPT</a>
+									</li>
+									<li>
+										<a href="#">Red Team Assessment</a>
+									</li>
+									<li>
+										<a href="#">VoIP Penetration Testing</a>
+									</li>
+								</ul>
+								<h5>BLOCKCHAIN SECURITY</h5>
+								<ul>
+									<li>
+										<a href="#">Smart Contract Auditing</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>Strobes</h5>
+						<ul>
+							<li>
+								<a href="#">Overview</a>
+							</li>
+							<li>
+								<a href="#">Application Security</a>
+							</li>
+							<li>
+								<a href="#">Infrastructure Security</a>
+							</li>
+							<li>
+								<a href="#">Enterprise Security</a>
+							</li>
+							<li>
+								<a href="#">CAINS</a>
+							</li>
+							<li>
+								<a href="#">Managed DevSecOps</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-1">
+						<h5>social</h5>
+						<ul class="social">
+							<li class="item">
+								<a href="http://" target="_blank" rel="noopener noreferrer">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path id="Path_133" data-name="Path 133" d="M26.67,4H5.33A1.34,1.34,0,0,0,4,5.33V26.67A1.34,1.34,0,0,0,5.33,28H16.82V18.72H13.7V15.09h3.12V12.42c0-3.1,1.89-4.79,4.67-4.79a18.63,18.63,0,0,1,2.79.14V11H22.37c-1.51,0-1.8.72-1.8,1.77v2.31h3.6l-.47,3.63H20.57V28h6.1A1.34,1.34,0,0,0,28,26.67V5.33A1.34,1.34,0,0,0,26.67,4Z" transform="translate(-4 -4)" fill="#666"></path>
+                                    </svg>
+								</a>
+							</li>
+							<li class="item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.93" viewBox="0 0 24 23.93">
+                                        <path id="Path_134" data-name="Path 134" d="M26.21,4H5.79A1.78,1.78,0,0,0,4,5.73V26.2a1.77,1.77,0,0,0,1.79,1.73H26.21A1.77,1.77,0,0,0,28,26.2V5.73A1.78,1.78,0,0,0,26.21,4ZM11.11,24.41H7.59V13h3.52Zm-1.72-13A2.07,2.07,0,0,1,7.32,9.39,2,2,0,0,1,9.39,7.32a2.07,2.07,0,0,1,0,4.13ZM24.48,24.34H21V18.76c0-1.33,0-3.06-1.86-3.06S17,17.16,17,18.63v5.65H13.44V13h3.32v1.5h.07a3.72,3.72,0,0,1,3.39-1.86c3.59,0,4.26,2.4,4.26,5.45Z" transform="translate(-4 -4)" fill="#666"></path>
+								</svg>
+							</li>
+							<li class="item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="17.877" viewBox="0 0 22 17.877">
+                                        <path id="Path_135" data-name="Path 135" d="M11.92,24.94A12.76,12.76,0,0,0,24.76,12.1v-.59A9.4,9.4,0,0,0,27,9.18a9.31,9.31,0,0,1-2.59.71,4.56,4.56,0,0,0,2-2.5,8.89,8.89,0,0,1-2.86,1.1,4.52,4.52,0,0,0-7.7,4.11,12.79,12.79,0,0,1-9.3-4.71,4.51,4.51,0,0,0,1.4,6,4.47,4.47,0,0,1-2-.56v.05A4.53,4.53,0,0,0,9.5,17.83a4.53,4.53,0,0,1-2,.08A4.51,4.51,0,0,0,11.68,21a9.05,9.05,0,0,1-5.61,2A9.771,9.771,0,0,1,5,22.91a12.77,12.77,0,0,0,6.92,2" transform="translate(-5 -7.063)" fill="#666"></path>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom py-5">
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<h4>WeSecureApp <br> <small>© 2020 WeSecureApp. All Rights Reserved.</small></h4>
+						</div>
+						<div class="col-md-6 text-right">
+							<img src="./assets/images/footer image.png" width="188" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 	</div>
 
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
 </body>
 </html>

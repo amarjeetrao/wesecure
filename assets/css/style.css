@@ -4,19 +4,23 @@
 	--brand-black: #000;
 	--brand-white: #fff;
 	--brand-primary: #0f62fe;
+	--brand-primary-light: #bae6ff;
 	--brand-secondary: #F7F3F2;
+	--brand-secondary-light: #fcf4d6;
 	--brand-mute: #666666;
 	--brand-light: #EEEEEE;
+	--brand-dark: #202020;
 }
 
 body {
+	color: var(--brand-black);
 	font: normal 1.6rem/100% 'IBM Plex Sans', sans-serif;
 	background-color: var(--brand-white);
 }
 
 h1, .h1 {
 	font-size: 6rem;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 2rem;
 }
 
@@ -40,6 +44,11 @@ h4, .h4 {
     font-weight: 400;
 }
 
+h5, .h5 {
+	font-size: 1.6rem;
+    font-weight: 500;
+}
+
 p {
 	margin-bottom: 2rem;
 	line-height: 2
@@ -48,13 +57,26 @@ p {
 .muted-heading {
 	font-size: 1.4rem !important;
     color: var(--brand-mute);
-    text-transform: uppercase;
-    font-weight: 500;
+	text-transform: uppercase;
+	line-height: 2;
+	font-weight: 500;
+	margin-bottom: 0;
+    margin-top: 2rem;
 }
 
 /*************** General style *****************/
 .icon {
 	margin-bottom: 6rem;
+}
+
+.bg-dark {
+	color: var(--brand-white);
+	background-color: var(--brand-dark) !important;
+}
+
+.bg-black {
+	color: var(--brand-white);
+	background-color: var(--brand-black) !important;
 }
 
 /*************** Bootstrap components over rides *****************/
@@ -81,6 +103,14 @@ p {
 }
 
 /*************** Navigation *****************/
+.page-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    z-index: 9999;
+}
+
 .navbar-dark {
 	background-color: var(--brand-black);
 }
@@ -98,10 +128,13 @@ p {
 }
 
 /*************** hero banner *****************/
+.hero-banner {
+	padding-top: 12rem;
+}
+
 .hero-banner p {
 	font-size: 1.8rem;
 	line-height: 3rem;
-	font-weight: 300
 }
 
 /*************** mission section *****************/
@@ -111,10 +144,26 @@ p {
 }
 
 /*************** Team section *****************/
-.card {
-	border: 1px solid var(--brand-light);
-    margin-bottom: 2rem;
+.card-list [class*="col-"]{
+	margin-bottom: 2rem;
+	padding: 0 0.8rem;
 }
+
+.card-list [class*="col-"]:first-child{
+    padding-left: 15px;
+}
+
+.card-list [class*="col-"]:last-child{
+    padding-right: 15px;
+}
+
+.card {
+	height: 100%;
+	/* margin-bottom: 2rem; */
+	border: 1px solid var(--brand-light);
+	border-radius: 0;
+}
+
 .card-img-top-bg {
 	display: flex;
 	background-color: var(--brand-secondary);
@@ -123,10 +172,15 @@ p {
 .card-img-top {
 	width: 16rem;
 	margin: 3.5rem auto;
+	filter: grayscale(1);
 }
 
 .card-body {
 	padding: 2rem 3rem;
+}
+
+.card-subtitle {
+	margin-top: 1rem;
 }
 
 .card-social ul.social {
@@ -140,4 +194,116 @@ p {
 
 .card-social ul.social .item:first-child {
 	padding-left: 0;
+}
+
+/*************** testimonial section *****************/
+
+.testimonial .swiper-slide {
+	padding: 10.1rem 0;
+}
+
+.testimonial .swiper-slide:first-child {
+	background-color: var(--brand-primary-light)
+}
+
+.testimonial .swiper-slide:nth-child(2) {
+	background-color: var(--brand-secondary)
+}
+
+.testimonial .swiper-slide:nth-child(3) {
+	background-color: var(--brand-secondary-light)
+}
+
+.testimonial .swiper-slide img {
+	padding: 2rem 0 4rem;
+}
+
+.testimonial .swiper-slide blockquote {
+	font-size: 2.8rem;
+    line-height: 1.4;
+}
+
+.profile .avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.profile .avatar img {
+	padding: 0;
+	border-radius: 50%;
+}
+
+.swiper-pagination {
+	text-align: left;
+	bottom: 12rem;
+}
+
+.swiper-pagination-bullet {
+	width: 1rem;
+	height: 1rem;
+	margin-left: 0.5rem;
+	text-align: left;
+	bottom: 12rem;
+	opacity: 0.5;
+	border-radius: 0.3rem;
+	background: var(--brand-white)
+}
+
+.swiper-pagination-bullet-active {
+	opacity: 1;
+	background-color: var(--brand-white);
+}
+
+/*************** footer section *****************/
+footer {
+	padding: 8rem 0 4rem;
+
+}
+
+footer h5 {
+	margin-bottom: 4rem;
+}
+
+footer ul {
+	padding-left: 0;
+}
+
+footer ul h5 {
+	font-size: 1.4rem;
+	margin-bottom: 1.2rem;
+}
+
+footer ul li {
+	list-style-type: none;
+}
+
+footer ul li ul {
+	margin-bottom: 3rem;
+}
+
+footer ul li a {
+	color: var(--brand-mute);
+	font-weight: 500;
+	line-height: 2;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: var(--brand-white);
+	text-decoration: none;
+}
+
+footer .social .item {
+	line-height: 3;
+}
+
+.footer-bottom h4 {
+	font-weight: bold;
+}
+
+.footer-bottom h4 small {
+	color: var(--brand-mute);
+	font-size: 62%;
+	font-weight: 500;
 }
